@@ -8,18 +8,25 @@ html {
   width: 300px;
 
   background: transparent url("../images/clock-face.svg") no-repeat center center;
+  position: relative;
 }
 
 .center {
   width: 28px;
+  top: 135px;
+  left: 135px
 }
 
 .hand {
   width: 14px;
+  position: absolute;
 }
 
 .hand-hour {
-
+  top: 90px;
+  left: 140px;
+  transform-origin: bottom;
+  animation: spin 6s infinite linear;
 }
 
 .hand-minute {
